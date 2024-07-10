@@ -1,0 +1,81 @@
+body {
+  padding: 20px 30px;
+}
+
+form {
+	width: 370px;
+}
+
+input {
+  height: 45px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #999;
+	display: block;
+	font-size: 32px;
+	padding: 15px 20px;
+	text-align: center;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: rgb(209, 209, 209);
+}
+
+#number-input {
+	width: calc(100% - 46px);
+}
+
+#expiry-input {
+	display: inline-block;
+	margin-right: 5%;
+	width: calc(55% - 40px);
+}
+
+#cvc-input {
+	display: inline-block;
+	width: calc(37.8% - 40px);
+}
+
+#email {
+  padding: 5px 10px;
+  width: calc(100% - 26px);
+}
+
+.cc-types {
+  width: 370px;
+}
+
+.cc-types__img {
+	display: inline-block;
+	margin-left: -4px;
+	width: 20%;
+	vertical-align: middle;
+
+	filter: sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);
+}
+
+.cc-types__img--active {
+	filter: none;
+}
+
+.cc-types__img {
+	content: url('./assets/images/card.svg');
+}
+
+.cc-types__img--visa {
+	content: url('./assets/images/visa.svg');
+}
+
+.cc-types__img--mastercard {
+	content: url('./assets/images/mastercard.svg');
+}
+
+.cc-types__img--amex {
+	content: url('./assets/images/amex.svg');
+}
+
+.cc-types__img--disc {
+	content: url('./assets/images/disk.svg');
+}
